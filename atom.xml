@@ -6,7 +6,7 @@
   <link href="https://hua-ge.online/atom.xml" rel="self"/>
   
   <link href="https://hua-ge.online/"/>
-  <updated>2021-04-06T13:20:15.758Z</updated>
+  <updated>2021-04-06T13:29:19.722Z</updated>
   <id>https://hua-ge.online/</id>
   
   <author>
@@ -21,12 +21,14 @@
     <link href="https://hua-ge.online/2021/04/06/%E5%9B%BE%E7%89%87/"/>
     <id>https://hua-ge.online/2021/04/06/%E5%9B%BE%E7%89%87/</id>
     <published>2021-04-06T08:23:47.000Z</published>
-    <updated>2021-04-06T13:20:15.758Z</updated>
+    <updated>2021-04-06T13:29:19.722Z</updated>
     
     
     <summary type="html">&lt;p&gt;图片来源于网络，如有侵权，请联系作者速删。&lt;br&gt;&lt;img src=&quot;/2021/04/06/%E5%9B%BE%E7%89%87/0.jpg&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;</summary>
     
     
+    
+    <category term="美女" scheme="https://hua-ge.online/categories/%E7%BE%8E%E5%A5%B3/"/>
     
     
     <category term="美女" scheme="https://hua-ge.online/tags/%E7%BE%8E%E5%A5%B3/"/>
@@ -38,21 +40,17 @@
     <link href="https://hua-ge.online/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/"/>
     <id>https://hua-ge.online/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/</id>
     <published>2021-04-05T08:20:26.639Z</published>
-    <updated>2021-04-05T08:27:09.139Z</updated>
+    <updated>2021-04-06T13:31:04.802Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;先说一下我使用的操作环境：python</summary>
-        
-      
+    <summary type="html">&lt;img src=&quot;/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/0.jpg&quot; width=&quot;100%&quot;&gt;</summary>
     
     
     
     <category term="python爬虫" scheme="https://hua-ge.online/categories/python%E7%88%AC%E8%99%AB/"/>
     
+    
+    <category term="python" scheme="https://hua-ge.online/tags/python/"/>
     
   </entry>
   
@@ -61,43 +59,17 @@
     <link href="https://hua-ge.online/2021/04/05/python/"/>
     <id>https://hua-ge.online/2021/04/05/python/</id>
     <published>2021-04-05T08:08:34.474Z</published>
-    <updated>2021-04-05T08:11:57.549Z</updated>
+    <updated>2021-04-06T13:27:50.392Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;ol&gt;
-&lt;li&gt;python是一种跨平台的高级程序语言，是一个面向对象的脚本语言。主要可以用于数据分析，网络编程，网络爬虫，web开发，人工智能，大数据分析，后端开发等。&lt;/li&gt;
-&lt;li&gt;你还可以从网上找到许多关于python的介绍，赶紧行动吧！&lt;/li&gt;
-&lt;li&gt;下面说一下</summary>
-        
-      
+    <summary type="html">&lt;img src=&quot;/2021/04/05/python/0.jpg&quot; width=&quot;100%&quot;&gt;</summary>
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://hua-ge.online/2021/04/05/hello-world/"/>
-    <id>https://hua-ge.online/2021/04/05/hello-world/</id>
-    <published>2021-04-05T04:22:07.807Z</published>
-    <updated>2021-04-05T04:22:07.807Z</updated>
+    <category term="python" scheme="https://hua-ge.online/categories/python/"/>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
+    <category term="python" scheme="https://hua-ge.online/tags/python/"/>
     
   </entry>
   

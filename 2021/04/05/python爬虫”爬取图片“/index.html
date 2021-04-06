@@ -10,7 +10,7 @@
     <title>python爬取美女图片 | hua-ge博客</title>
     <meta name="author" content="John Doe">
     
-    <meta name="description" content="先说一下我使用的操作环境：python 3.81,pycharm。用到的模块有：requests,parsel(详细用法请查找官方文档）网页分析方法举例：打开开发者工具，选中其中的一个图片页面。在定位到的html元素行（颜色明显），观察上下行，找到url.代码：import requests,par">
+    <meta name="description" content="">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -162,6 +162,22 @@
 
         
 
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/python/">
+                    python <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/美女/">
+                    美女 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
     </ul>
 </div>
 
@@ -222,6 +238,12 @@
 </span>
 
             
+    <div class="tags-row">
+        
+            <a href="/tags/python/" class="chip pink lighten-17">python</a>
+        
+    </div>
+
 
             <div class="toc pink-link-context hide-on-med-and-down">
     
@@ -229,7 +251,28 @@
 
 
             <div class="entry pink-link-context">
-                <p>先说一下我使用的操作环境：python 3.81,pycharm。<br>用到的模块有：requests,parsel(详细用法请查找官方文档）<br>网页分析方法举例：打开开发者工具，选中其中的一个图片页面。在定位到的html元素行（颜色明显），观察上下行，找到url.<br>代码：import requests,parsel #导入模块<br>kv={&#x27;User-Agent&#x27;: &#x27;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36&#x27;}<br>r=requests.get(&#x27;<a target="_blank" rel="noopener" href="https://www.vmgirls.com/sitemap.shtml&#x27;,headers=kv">https://www.vmgirls.com/sitemap.shtml&#x27;,headers=kv</a>)<br>r.encoding=r.apparent_encoding<br>data=parsel.Selector(r.text)<br>url=data.re(&#x27;href=”(.<em>?)”&#x27;)<br>for i in range(4,12):<br>print(&#x27;url&#x27;,i,&#x27;:&#x27;,url[i])<br>rr=requests.get(url[i],headers=kv) ddata=parsel.Selector(rr.text)<br>jpg=ddata.re(&#x27;d?a?t?a?-[h|s]r[e|c]f?=”(.</em>?.j?pn?e?g)”&#x27;)<br>del jpg[len(jpg)-1]<br>for j in range(2,len(jpg)):<br>html=requests.get(jpg[j],headers=kv)<br>print(&#x27;图片&#x27;,j-2,&#x27;:&#x27;,jpg[j])<br>with open(&#x27;./video1/video{}{}.jpg&#x27;.format(i,jpg[j][-15:-11]),&#x27;wb&#x27;)as f:<br>f.write(html.content)<br>声明：本文章内容仅用于学习。</p>
+                <img src="/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/0.jpg" width="100%">
+<span id="more"></span>
+先说一下我使用的操作环境：python 3.81,pycharm。
+用到的模块有：requests,parsel(详细用法请查找官方文档）
+网页分析方法举例：打开开发者工具，选中其中的一个图片页面。在定位到的html元素行（颜色明显），观察上下行，找到url.
+代码：import requests,parsel #导入模块
+kv={&#x27;User-Agent&#x27;: &#x27;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36&#x27;}
+r=requests.get(&#x27;https://www.vmgirls.com/sitemap.shtml&#x27;,headers=kv)
+r.encoding=r.apparent_encoding
+data=parsel.Selector(r.text)
+url=data.re(&#x27;href="(.*?)"&#x27;)
+for i in range(4,12):
+print(&#x27;url&#x27;,i,&#x27;:&#x27;,url[i])
+rr=requests.get(url[i],headers=kv) ddata=parsel.Selector(rr.text)
+jpg=ddata.re(&#x27;d?a?t?a?-[h|s]r[e|c]f?="(.*?.j?pn?e?g)"&#x27;)
+del jpg[len(jpg)-1]
+for j in range(2,len(jpg)):
+html=requests.get(jpg[j],headers=kv)
+print(&#x27;图片&#x27;,j-2,&#x27;:&#x27;,jpg[j])
+with open(&#x27;./video1/video{}{}.jpg&#x27;.format(i,jpg[j][-15:-11]),&#x27;wb&#x27;)as f:
+f.write(html.content)
+声明：本文章内容仅用于学习。
 
                 
 <p class="pink-link-context">
