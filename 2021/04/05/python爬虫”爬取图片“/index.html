@@ -259,15 +259,15 @@
 代码如下：
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import requests,parsel </span><br><span class="line">kv&#x3D;&#123;&amp;#x27;User-Agent&amp;#x27;: &amp;#x27;Mozilla&#x2F;5.0 (Windows NT 10.0; WOW64)</span><br><span class="line"> AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;78.0.3904.108 Safari&#x2F;537.36&amp;#x27;&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">r&#x3D;requests.get(&amp;#x27;https:&#x2F;&#x2F;www.vmgirls.com&#x2F;sitemap.shtml&amp;#x27;,headers&#x3D;kv)</span><br><span class="line">r.encoding&#x3D;r.apparent_encoding</span><br><span class="line">data&#x3D;parsel.Selector(r.text)</span><br><span class="line">url&#x3D;data.re(&amp;#x27;href&#x3D;&quot;(.*?)&quot;&amp;#x27;)</span><br></pre></td></tr></table></figure>
+<p>r=requests.get(&#x27;<a target="_blank" rel="noopener" href="https://www.vmgirls.com/sitemap.shtml&#x27;,headers=kv">https://www.vmgirls.com/sitemap.shtml&#x27;,headers=kv</a>)<br>r.encoding=r.apparent_encoding<br>data=parsel.Selector(r.text)<br>url=data.re(&#x27;href=”(.*?)”&#x27;)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for i in range(4,12):</span><br><span class="line">    print(&amp;#x27;url&amp;#x27;,i,&amp;#x27;:&amp;#x27;,url[i])</span><br><span class="line">    rr&#x3D;requests.get(url[i],headers&#x3D;kv) ddata&#x3D;parsel.Selector(rr.text)</span><br><span class="line">    jpg&#x3D;ddata.re(&amp;#x27;d?a?t?a?-[h|s]r[e|c]f?&#x3D;&quot;(.*?.j?pn?e?g)&quot;&amp;#x27;)</span><br><span class="line">    del jpg[len(jpg)-1]</span><br></pre></td></tr></table></figure>
 <pre><code>for j in range(2,len(jpg)):
     html=requests.get(jpg[j],headers=kv)
     print(&amp;#x27;图片&amp;#x27;,j-2,&amp;#x27;:&amp;#x27;,jpg[j])
     with open(&amp;#x27;./video1/video&#123;&#125;&#123;&#125;.jpg&amp;#x27;.format(i,jpg[j][-15:-11]),&amp;#x27;wb&amp;#x27;)as f:
         f.write(html.content)
+f.close()
 </code></pre>
-<p>f.close()</p>
 <pre><code>声明：本文章内容仅用于学习。
 </code></pre>
 
