@@ -178,6 +178,14 @@
 
         
 
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/美女图片/">
+                    美女图片 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
     </ul>
 </div>
 
@@ -248,6 +256,12 @@
                 <p>先说一下我使用的操作环境：python 3.81,pycharm。<br>用到的模块有：requests,parsel(详细用法请查找官方文档）<br>网页分析方法举例：打开开发者工具，选中其中的一个图片页面。在定位到的html元素行（颜色明显），观察上下行，找到url.<br>代码：import requests,parsel #导入模块<br>kv={&#x27;User-Agent&#x27;: &#x27;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36&#x27;}<br>r=requests.get(&#x27;<a target="_blank" rel="noopener" href="https://www.vmgirls.com/sitemap.shtml&#x27;,headers=kv">https://www.vmgirls.com/sitemap.shtml&#x27;,headers=kv</a>)<br>r.encoding=r.apparent_encoding<br>data=parsel.Selector(r.text)<br>url=data.re(&#x27;href=”(.<em>?)”&#x27;)<br>for i in range(4,12):<br>print(&#x27;url&#x27;,i,&#x27;:&#x27;,url[i])<br>rr=requests.get(url[i],headers=kv) ddata=parsel.Selector(rr.text)<br>jpg=ddata.re(&#x27;d?a?t?a?-[h|s]r[e|c]f?=”(.</em>?.j?pn?e?g)”&#x27;)<br>del jpg[len(jpg)-1]<br>for j in range(2,len(jpg)):<br>html=requests.get(jpg[j],headers=kv)<br>print(&#x27;图片&#x27;,j-2,&#x27;:&#x27;,jpg[j])<br>with open(&#x27;./video1/video{}{}.jpg&#x27;.format(i,jpg[j][-15:-11]),&#x27;wb&#x27;)as f:<br>f.write(html.content)<br>声明：本文章内容仅用于学习。</p>
 
                 
+<p class="pink-link-context">
+    <a href="/2021/04/06/%E5%9B%BE%E7%89%87/" rel="next" title="美图，增加一下浏览量">
+    上一篇：美图，增加一下浏览量
+  </a>
+</p>
+
 
 
 <p class="pink-link-context">
