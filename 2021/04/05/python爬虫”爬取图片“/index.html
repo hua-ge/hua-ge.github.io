@@ -263,7 +263,7 @@
     r.encoding=r.apparent_encoding
     data=parsel.Selector(r.text)
     url=data.re(&#x27;href="(.*?)"&#x27;)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for i in range(4,12):</span><br><span class="line">    print(&amp;#x27;url&amp;#x27;,i,&amp;#x27;:&amp;#x27;,url[i])</span><br><span class="line">    rr&#x3D;requests.get(url[i],headers&#x3D;kv) ddata&#x3D;parsel.Selector(rr.text)</span><br><span class="line">    jpg&#x3D;ddata.re(&amp;#x27;d?a?t?a?-[h|s]r[e|c]f?&#x3D;&quot;(.*?.j?pn?e?g)&quot;&amp;#x27;)</span><br><span class="line">    del jpg[len(jpg)-1]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for i in range(4,12):</span><br><span class="line">     print(&amp;#x27;url&amp;#x27;,i,&amp;#x27;:&amp;#x27;,url[i])</span><br><span class="line">     rr&#x3D;requests.get(url[i],headers&#x3D;kv) ddata&#x3D;parsel.Selector(rr.text)</span><br><span class="line">     jpg&#x3D;ddata.re(&amp;#x27;d?a?t?a?-[h|s]r[e|c]f?&#x3D;&quot;(.*?.j?pn?e?g)&quot;&amp;#x27;)</span><br><span class="line">     del jpg[len(jpg)-1]</span><br></pre></td></tr></table></figure>
     for j in range(2,len(jpg)):
         html=requests.get(jpg[j],headers=kv)
         print(&#x27;图片&#x27;,j-2,&#x27;:&#x27;,jpg[j])
