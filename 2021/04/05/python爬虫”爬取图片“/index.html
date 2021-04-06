@@ -10,7 +10,7 @@
     <title>python爬取美女图片 | hua-ge博客</title>
     <meta name="author" content="John Doe">
     
-    <meta name="description" content="先说一下我使用的操作环境：python 3.81,pycharm。用到的模块有：requests,parsel(详细用法请查找官方文档）网页分析方法举例：打开开发者工具，选中其中的一个图片页面。在定位到的html元素行（颜色明显），观察上下行，找到url.代码：、、、import requests,">
+    <meta name="description" content="">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -251,7 +251,25 @@
 
 
             <div class="entry pink-link-context">
-                <p>先说一下我使用的操作环境：python 3.81,pycharm。<br>用到的模块有：requests,parsel(详细用法请查找官方文档）<br>网页分析方法举例：打开开发者工具，选中其中的一个图片页面。在定位到的html元素行（颜色明显），观察上下行，找到url.<br>代码：<br>、、、<br>import requests,parsel<br>、、、<br>#导入模块<br>、、、<br>kv={&#x27;User-Agent&#x27;: &#x27;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36&#x27;}<br>、、、<br>r=requests.get(&#x27;<a target="_blank" rel="noopener" href="https://www.vmgirls.com/sitemap.shtml&#x27;,headers=kv">https://www.vmgirls.com/sitemap.shtml&#x27;,headers=kv</a>)<br>、、、<br>r.encoding=r.apparent_encoding<br>、、、<br>data=parsel.Selector(r.text)<br>url=data.re(&#x27;href=”(.<em>?)”&#x27;)<br>for i in range(4,12):<br>    print(&#x27;url&#x27;,i,&#x27;:&#x27;,url[i])<br>    rr=requests.get(url[i],headers=kv) ddata=parsel.Selector(rr.text)<br>    jpg=ddata.re(&#x27;d?a?t?a?-[h|s]r[e|c]f?=”(.</em>?.j?pn?e?g)”&#x27;)<br>    del jpg[len(jpg)-1]<br>    for j in range(2,len(jpg)):<br>        html=requests.get(jpg[j],headers=kv)<br>        print(&#x27;图片&#x27;,j-2,&#x27;:&#x27;,jpg[j])<br>        with open(&#x27;./video1/video{}{}.jpg&#x27;.format(i,jpg[j][-15:-11]),&#x27;wb&#x27;)as f:<br>            f.write(html.content)<br>f.close()<br>、、、<br>声明：本文章内容仅用于学习。</p>
+                <img src="/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/0.jpg" width="100%">
+<span id="more"></span>
+先说一下我使用的操作环境：python 3.81,pycharm。
+用到的模块有：requests,parsel(详细用法请查找官方文档）
+网页分析方法举例：打开开发者工具，选中其中的一个图片页面。在定位到的html元素行（颜色明显），观察上下行，找到url.
+代码如下：
+>导入模块
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import requests,parsel </span><br></pre></td></tr></table></figure>
+>设置请求头
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kv&#x3D;&#123;&amp;#x27;User-Agent&amp;#x27;: &amp;#x27;Mozilla&#x2F;5.0 (Windows NT 10.0; WOW64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;78.0.3904.108 Safari&#x2F;537.36&amp;#x27;&#125;</span><br></pre></td></tr></table></figure>
+>获取网页信息
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">r&#x3D;requests.get(&amp;#x27;https:&#x2F;&#x2F;www.vmgirls.com&#x2F;sitemap.shtml&amp;#x27;,headers&#x3D;kv)</span><br></pre></td></tr></table></figure>
+>改变编码方式
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">r.encoding&#x3D;r.apparent_encoding</span><br></pre></td></tr></table></figure>
+>正则抓取信息
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">data&#x3D;parsel.Selector(r.text)</span><br><span class="line">url&#x3D;data.re(&amp;#x27;href&#x3D;&quot;(.*?)&quot;&amp;#x27;)</span><br><span class="line">for i in range(4,12):</span><br><span class="line">    print(&amp;#x27;url&amp;#x27;,i,&amp;#x27;:&amp;#x27;,url[i])</span><br><span class="line">    rr&#x3D;requests.get(url[i],headers&#x3D;kv) ddata&#x3D;parsel.Selector(rr.text)</span><br><span class="line">    jpg&#x3D;ddata.re(&amp;#x27;d?a?t?a?-[h|s]r[e|c]f?&#x3D;&quot;(.*?.j?pn?e?g)&quot;&amp;#x27;)</span><br><span class="line">    del jpg[len(jpg)-1]</span><br><span class="line">    for j in range(2,len(jpg)):</span><br><span class="line">        html&#x3D;requests.get(jpg[j],headers&#x3D;kv)</span><br><span class="line">        print(&amp;#x27;图片&amp;#x27;,j-2,&amp;#x27;:&amp;#x27;,jpg[j])</span><br></pre></td></tr></table></figure>
+>保存图片
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">        with open(&amp;#x27;.&#x2F;video1&#x2F;video&#123;&#125;&#123;&#125;.jpg&amp;#x27;.format(i,jpg[j][-15:-11]),&amp;#x27;wb&amp;#x27;)as f:</span><br><span class="line">            f.write(html.content)</span><br><span class="line">f.close()</span><br></pre></td></tr></table></figure>
+声明：本文章内容仅用于学习。
 
                 
 <p class="pink-link-context">
