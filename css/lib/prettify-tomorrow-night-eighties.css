@@ -139,7 +139,7 @@ li.L7,
 li.L9 {
   /* */
 }
-blockquote {
+  .blockquote {
   margin: 0;
   padding: 0;
   word-break: break-all;
