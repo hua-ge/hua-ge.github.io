@@ -3,11 +3,11 @@
   <title>华哥博客</title>
   
   
-  <link href="https://home-yan.github.io/atom.xml" rel="self"/>
+  <link href="https://hua-ge.github.io/atom.xml" rel="self"/>
   
-  <link href="https://home-yan.github.io/"/>
+  <link href="https://hua-ge.github.io/"/>
   <updated>2021-04-10T05:46:07.654Z</updated>
-  <id>https://home-yan.github.io/</id>
+  <id>https://hua-ge.github.io/</id>
   
   <author>
     <name>hua-ge</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://home-yan.github.io/2021/04/10/hello-world/"/>
-    <id>https://home-yan.github.io/2021/04/10/hello-world/</id>
+    <link href="https://hua-ge.github.io/2021/04/10/hello-world/"/>
+    <id>https://hua-ge.github.io/2021/04/10/hello-world/</id>
     <published>2021-04-10T05:46:07.654Z</published>
     <updated>2021-04-10T05:46:07.654Z</updated>
     
