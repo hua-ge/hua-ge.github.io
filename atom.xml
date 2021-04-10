@@ -6,7 +6,7 @@
   <link href="https://hua-ge.github.io/atom.xml" rel="self"/>
   
   <link href="https://hua-ge.github.io/"/>
-  <updated>2021-04-10T05:46:07.654Z</updated>
+  <updated>2021-04-10T10:07:42.297Z</updated>
   <id>https://hua-ge.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>什么是python</title>
+    <link href="https://hua-ge.github.io/2021/04/10/python/"/>
+    <id>https://hua-ge.github.io/2021/04/10/python/</id>
+    <published>2021-04-10T10:06:18.715Z</published>
+    <updated>2021-04-10T10:07:42.297Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;python是一种跨平台的高级程序语言，是一个面向对象的脚本语言。主要可以用于数据分析，网络编程，网络爬虫，web开发，人工智能，大数据分析，后端开发等。&lt;/li&gt;
+&lt;li&gt;你还可以从网上找到许多关于python的介绍，赶紧行动吧！&lt;/li&gt;
+&lt;li&gt;下面说一下</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://hua-ge.github.io/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://hua-ge.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
