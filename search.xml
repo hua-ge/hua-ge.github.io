@@ -8,7 +8,7 @@
       <link href="2021/04/10/python/"/>
       <url>2021/04/10/python/</url>
       
-        <content type="html"><![CDATA[<blockquote><ol><li>python是一种跨平台的高级程序语言，是一个面向对象的脚本语言。主要可以用于数据分析，网络编程，网络爬虫，web开发，人工智能，大数据分析，后端开发等。</li><li>你还可以从网上找到许多关于python的介绍，赶紧行动吧！</li><li>下面说一下python的基础知识目录:<br>数据类型和标识符及命名，<br>简单print语句和input语句的使用，<br>进制的表示与转换，<br>数据的类型与转换，<br>运算符，<br>判断语句<br>循环语句<br>break与continue的用法与区别<br>字符串的用法<br>元组，列表，字典，集合<br>函数，模块，类<br>文件的输入输出<br>程序异常的处理</li><li>python的诞生<br>python诞生于20世纪90年代，创始人为荷兰的吉多.范罗苏姆，而且python的诞生很有戏剧性，因为在其产生之始，吉多只是为了打发圣诞节的无趣。然而随着python的不断完善，逐渐形成了一种集合网络爬虫开发，软件前后端开发，人工智能与大数据分析等功能的强大的高级程序语言。<br><img src="https://img2.baidu.com/it/u=3206689113,2237998950&amp;fm=26&amp;fmt=auto&amp;gp=0.jpg" alt="美女"></li></ol></blockquote><pre class="line-numbers language-none"><code class="language-none">def fun(a,b):    c=a+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb    print(c)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>]]></content>
+        <content type="html"><![CDATA[<blockquote><ol><li>python是一种跨平台的高级程序语言，是一个面向对象的脚本语言。主要可以用于数据分析，网络编程，网络爬虫，web开发，人工智能，大数据分析，后端开发等。</li><li>你还可以从网上找到许多关于python的介绍，赶紧行动吧！</li><li>下面说一下python的基础知识目录:<br>数据类型和标识符及命名，<br>简单print语句和input语句的使用，<br>进制的表示与转换，<br>数据的类型与转换，<br>运算符，<br>判断语句<br>循环语句<br>break与continue的用法与区别<br>字符串的用法<br>元组，列表，字典，集合<br>函数，模块，类<br>文件的输入输出<br>程序异常的处理</li><li>python的诞生<br>python诞生于20世纪90年代，创始人为荷兰的吉多.范罗苏姆，而且python的诞生很有戏剧性，因为在其产生之始，吉多只是为了打发圣诞节的无趣。然而随着python的不断完善，逐渐形成了一种集合网络爬虫开发，软件前后端开发，人工智能与大数据分析等功能的强大的高级程序语言。</li></ol></blockquote>]]></content>
       
       
       <categories>
