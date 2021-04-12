@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="音乐, 华哥博客">
+    <meta name="keywords" content="python爬取美女图片, 华哥博客">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>音乐 | 华哥博客</title>
+    <title>python爬取美女图片 | 华哥博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -398,12 +398,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">音乐</h1>
+                    <h1 class="description center-align post-title">python爬取美女图片</h1>
                 </div>
             </div>
         </div>
@@ -517,12 +517,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/python%E7%88%AC%E8%99%AB/">
+                                <span class="chip bg-color">python爬虫</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/python%E7%88%AC%E8%99%AB/" class="post-category">
+                                python爬虫
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -531,21 +544,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-11
+                    2021-04-12
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-11
+                    2021-04-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    275
                 </div>
                 
 
@@ -575,7 +588,52 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>文章仅供学习，切勿给相关网站造成压力。<br><img src="../画册/画册/photo/Halcyon/0.jpg" width="100%"></p>
+<pre class="line-numbers language-none"><code class="language-none">import requests,random,os
+from parsel import Selector
+headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36'}
+#IP
+ip_data = ["175.42.123.52","113.194.137.189","182.46.122.207","118.212.107.160","36.248.133.130","121.232.199.123",	"113.195.165.68	","182.46.101.208","121.233.227.1","175.42.123.220","114.239.144.121"
+,"36.248.132.10"]
+    #端口
+port_data = "9999"
+    #固定IP格式
+new_data = {
+         "http": random.choice(ip_data)+ ":" + port_data
+    }
+html=requests.get(url='https://www.vmgirls.com/archives.html',headers=headers, proxies=new_data)
+
+selector=Selector(html.text)
+href=selector.re('href=(.*?html)')
+for i in range(0,len(href)):
+    #IP
+    ip_data = ["175.42.123.52","113.194.137.189","182.46.122.207"]
+    #端口
+    port_data = "9999"
+    #固定IP格式
+    new_data = {
+         "http": random.choice(ip_data)+ ":" + port_data
+    }
+    try:
+        href[i]='https://www.vmgirls.com/'+href[i].replace('"','')
+        print(href[i])
+        htmll=requests.get(url=href[i],headers=headers, proxies=new_data)
+        print(new_data)
+        selectorr=Selector(htmll.text)
+        hreff=selectorr.re('(alt=.*?)?src=("//static.vmgirls.com/image.*?j?pn?e?g)')
+        title=selectorr.re('alt=.*?title="(.*?)"&gt;')
+        print(title[0])
+        os.mkdir('./photo/{0}'.format(title[0]))
+        for j in range(0,len(hreff)):
+            hreff[j]='https:'+hreff[j].replace('"','')
+            pho=requests.get(hreff[j],headers=headers, proxies=new_data)
+            with open ('./photo/{0}/{1}.jpg'.format(title[0],j),'wb')as f:
+                f.write(pho.content)
+
+    except:
+        continue
+    
+f.close()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -601,7 +659,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://hua-ge.github.io/music/index.html">https://hua-ge.github.io/music/index.html</a>
+                    <a href="https://hua-ge.github.io/2021/04/12/pa-chong/">https://hua-ge.github.io/2021/04/12/pa-chong/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -638,7 +696,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/python%E7%88%AC%E8%99%AB/">
+                                    <span class="chip bg-color">python爬虫</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -813,13 +875,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/music/index.html">
+                <a href="/2021/04/12/pa-chong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="音乐">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="python爬取美女图片">
                         
-                        <span class="card-title">音乐</span>
+                        <span class="card-title">python爬取美女图片</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -830,17 +892,29 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-12
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            hua-ge
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/python%E7%88%AC%E8%99%AB/" class="post-category">
+                                    python爬虫
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python%E7%88%AC%E8%99%AB/">
+                        <span class="chip bg-color">python爬虫</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -848,16 +922,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/music/index.html">
+                <a href="/2021/04/10/python/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="音乐">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="什么是python">
                         
-                        <span class="card-title">音乐</span>
+                        <span class="card-title">什么是python</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -868,17 +942,28 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-10
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            hua-ge
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/python/" class="post-category">
+                                    python
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
