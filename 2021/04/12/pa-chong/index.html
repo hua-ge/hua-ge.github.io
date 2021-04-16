@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="华哥博客" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="华哥博客" type="application/atom+xml">
 </head>
 
 
@@ -580,7 +580,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    525
+                    528
                 </div>
                 
 
@@ -619,14 +619,51 @@
 <blockquote>
 <p>代码如下：</p>
 </blockquote>
-<p>python```<br>import requests,random,os<br>from parsel import Selector<br>headers={‘User-Agent’: ‘Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36’}<br>#IP<br>ip_data = [“175.42.123.52”,”113.194.137.189”,”182.46.122.207”,”118.212.107.160”,”36.248.133.130”,”121.232.199.123”,    “113.195.165.68    “,”182.46.101.208”,”121.233.227.1”,”175.42.123.220”,”114.239.144.121”<br>,”36.248.132.10”]<br>    #端口<br>port_data = “9999”<br>    #固定IP格式<br>new_data = {<br>         “http”: random.choice(ip_data)+ “:” + port_data<br>    }<br>html=requests.get(url=’<a target="_blank" rel="noopener" href="https://www.vmgirls.com/archives.html',headers=headers">https://www.vmgirls.com/archives.html',headers=headers</a>, proxies=new_data)</p>
-<p>selector=Selector(html.text)<br>href=selector.re(‘href=(.<em>?html)’)<br>for i in range(0,len(href)):<br>    #IP<br>    ip_data = [“175.42.123.52”,”113.194.137.189”,”182.46.122.207”]<br>    #端口<br>    port_data = “9999”<br>    #固定IP格式<br>    new_data = {<br>         “http”: random.choice(ip_data)+ “:” + port_data<br>    }<br>    try:<br>        href[i]=’<a target="_blank" rel="noopener" href="https://www.vmgirls.com/'+href[i].replace('&quot;','')">https://www.vmgirls.com/'+href[i].replace('"','')</a><br>        print(href[i])<br>        htmll=requests.get(url=href[i],headers=headers, proxies=new_data)<br>        print(new_data)<br>        selectorr=Selector(htmll.text)<br>        hreff=selectorr.re(‘(alt=.</em>?)?src=(“//static.vmgirls.com/image.<em>?j?pn?e?g)’)<br>        title=selectorr.re(‘alt=.</em>?title=”(.*?)”&gt;’)<br>        print(title[0])<br>        os.mkdir(‘./photo/{0}’.format(title[0]))<br>        for j in range(0,len(hreff)):<br>            hreff[j]=’https:’+hreff[j].replace(‘“‘,’’)<br>            pho=requests.get(hreff[j],headers=headers, proxies=new_data)<br>            with open (‘./photo/{0}/{1}.jpg’.format(title[0],j),’wb’)as f:<br>                f.write(pho.content)</p>
-<pre><code>except:
-    continue
-</code></pre>
-<p>f.close()</p>
-<pre><code>
-</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">import requests,random,os
+from parsel import Selector
+headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36'}
+#IP
+ip_data = ["175.42.123.52","113.194.137.189","182.46.122.207","118.212.107.160","36.248.133.130","121.232.199.123",	"113.195.165.68	","182.46.101.208","121.233.227.1","175.42.123.220","114.239.144.121"
+,"36.248.132.10"]
+    #端口
+port_data = "9999"
+    #固定IP格式
+new_data = {
+         "http": random.choice(ip_data)+ ":" + port_data
+    }
+html=requests.get(url='https://www.vmgirls.com/archives.html',headers=headers, proxies=new_data)
+
+selector=Selector(html.text)
+href=selector.re('href=(.*?html)')
+for i in range(0,len(href)):
+    #IP
+    ip_data = ["175.42.123.52","113.194.137.189","182.46.122.207"]
+    #端口
+    port_data = "9999"
+    #固定IP格式
+    new_data = {
+         "http": random.choice(ip_data)+ ":" + port_data
+    }
+    try:
+        href[i]='https://www.vmgirls.com/'+href[i].replace('"','')
+        print(href[i])
+        htmll=requests.get(url=href[i],headers=headers, proxies=new_data)
+        print(new_data)
+        selectorr=Selector(htmll.text)
+        hreff=selectorr.re('(alt=.*?)?src=("//static.vmgirls.com/image.*?j?pn?e?g)')
+        title=selectorr.re('alt=.*?title="(.*?)"&gt;')
+        print(title[0])
+        os.mkdir('./photo/{0}'.format(title[0]))
+        for j in range(0,len(hreff)):
+            hreff[j]='https:'+hreff[j].replace('"','')
+            pho=requests.get(hreff[j],headers=headers, proxies=new_data)
+            with open ('./photo/{0}/{1}.jpg'.format(title[0],j),'wb')as f:
+                f.write(pho.content)
+    except:
+        continue
+f.close()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
 
                 
             </div>
@@ -1199,7 +1236,7 @@
             
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">906</span>&nbsp;字
+                class="white-color">909</span>&nbsp;字
             
             
             
