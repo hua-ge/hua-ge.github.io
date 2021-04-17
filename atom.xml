@@ -6,7 +6,7 @@
   <link href="https://hua-ge.github.io/atom.xml" rel="self"/>
   
   <link href="https://hua-ge.github.io/"/>
-  <updated>2021-04-16T14:01:47.658Z</updated>
+  <updated>2021-04-17T01:01:11.880Z</updated>
   <id>https://hua-ge.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python</title>
+    <link href="https://hua-ge.github.io/2021/04/17/python-1/"/>
+    <id>https://hua-ge.github.io/2021/04/17/python-1/</id>
+    <published>2021-04-17T00:55:29.000Z</published>
+    <updated>2021-04-17T01:01:11.880Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;../%E7%94%BB%E5%86%8C/%E7%94%BB%E5%86%8C/photo/Halcyon/0.jpg&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="test" scheme="https://hua-ge.github.io/tags/test/"/>
+    
+  </entry>
   
   <entry>
     <title>python爬取美女图片</title>
