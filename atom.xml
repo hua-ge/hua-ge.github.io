@@ -6,7 +6,7 @@
   <link href="https://hua-ge.github.io/atom.xml" rel="self"/>
   
   <link href="https://hua-ge.github.io/"/>
-  <updated>2021-04-21T12:32:45.084Z</updated>
+  <updated>2021-04-21T13:24:39.127Z</updated>
   <id>https://hua-ge.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>�����Լ��Ĳ�����վ</title>
+    <title>创建自己的博客网站</title>
     <link href="https://hua-ge.github.io/2021/04/21/chuang-jian-zi-ji-de-bo-ke-wang-zhan/"/>
     <id>https://hua-ge.github.io/2021/04/21/chuang-jian-zi-ji-de-bo-ke-wang-zhan/</id>
     <published>2021-04-21T10:28:54.261Z</published>
-    <updated>2021-04-21T12:32:45.084Z</updated>
+    <updated>2021-04-21T13:24:39.127Z</updated>
     
     
       
@@ -29,7 +29,9 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;һ.hexo��ʲô��&lt;br&gt;Hexo ��һ������nodejs �ľ�̬������վ������������������̨��� Tommy</summary>
+&lt;p&gt;一.hexo是什么？&lt;br&gt;Hexo 是一个基于nodejs 的静态博客网站生成器，作者是来自台湾的 Tommy Chen。其特点主要有以下几点：&lt;br&gt;1.执行速度快&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2.支持</summary>
         
       
     
