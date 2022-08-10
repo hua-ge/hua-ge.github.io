@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>hua-ge博客</title>
-  <icon>https://hua-ge.online/icon.png</icon>
-  <subtitle>hua-ge博客</subtitle>
-  <link href="https://hua-ge.online/atom.xml" rel="self"/>
+  <title>华哥资源网</title>
+  <icon>https://hua-ge.github.io/icon.png</icon>
+  <subtitle>华哥资源网</subtitle>
+  <link href="https://hua-ge.github.io/atom.xml" rel="self"/>
   
-  <link href="https://hua-ge.online/"/>
+  <link href="https://hua-ge.github.io/"/>
   <updated>2021-04-07T03:32:03.899Z</updated>
-  <id>https://hua-ge.online/</id>
+  <id>https://hua-ge.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>hua-ge</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>图片</title>
-    <link href="https://hua-ge.online/2021/04/06/%E5%9B%BE%E7%89%87/"/>
-    <id>https://hua-ge.online/2021/04/06/%E5%9B%BE%E7%89%87/</id>
+    <link href="https://hua-ge.github.io/2021/04/06/%E5%9B%BE%E7%89%87/"/>
+    <id>https://hua-ge.github.io/2021/04/06/%E5%9B%BE%E7%89%87/</id>
     <published>2021-04-06T08:23:47.000Z</published>
     <updated>2021-04-07T03:32:03.899Z</updated>
     
@@ -28,17 +28,17 @@
     
     
     
-    <category term="美女" scheme="https://hua-ge.online/categories/%E7%BE%8E%E5%A5%B3/"/>
+    <category term="美女" scheme="https://hua-ge.github.io/categories/%E7%BE%8E%E5%A5%B3/"/>
     
     
-    <category term="美女" scheme="https://hua-ge.online/tags/%E7%BE%8E%E5%A5%B3/"/>
+    <category term="美女" scheme="https://hua-ge.github.io/tags/%E7%BE%8E%E5%A5%B3/"/>
     
   </entry>
   
   <entry>
     <title>python爬取美女图片</title>
-    <link href="https://hua-ge.online/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/"/>
-    <id>https://hua-ge.online/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/</id>
+    <link href="https://hua-ge.github.io/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/"/>
+    <id>https://hua-ge.github.io/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/</id>
     <published>2021-04-05T08:20:26.639Z</published>
     <updated>2021-04-08T15:21:12.266Z</updated>
     
@@ -48,17 +48,17 @@
     
     
     
-    <category term="python爬虫" scheme="https://hua-ge.online/categories/python%E7%88%AC%E8%99%AB/"/>
+    <category term="python爬虫" scheme="https://hua-ge.github.io/categories/python%E7%88%AC%E8%99%AB/"/>
     
     
-    <category term="python" scheme="https://hua-ge.online/tags/python/"/>
+    <category term="python" scheme="https://hua-ge.github.io/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>什么是python</title>
-    <link href="https://hua-ge.online/2021/04/05/python/"/>
-    <id>https://hua-ge.online/2021/04/05/python/</id>
+    <link href="https://hua-ge.github.io/2021/04/05/python/"/>
+    <id>https://hua-ge.github.io/2021/04/05/python/</id>
     <published>2021-04-05T08:08:34.474Z</published>
     <updated>2021-04-06T13:27:50.392Z</updated>
     
@@ -67,10 +67,10 @@
     
     
     
-    <category term="python" scheme="https://hua-ge.online/categories/python/"/>
+    <category term="python" scheme="https://hua-ge.github.io/categories/python/"/>
     
     
-    <category term="python" scheme="https://hua-ge.online/tags/python/"/>
+    <category term="python" scheme="https://hua-ge.github.io/tags/python/"/>
     
   </entry>
   
