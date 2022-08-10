@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>华哥资源网</title>
   <icon>https://hua-ge.github.io/icon.png</icon>
-  <subtitle>华哥资源网</subtitle>
+  <subtitle>励志语录</subtitle>
   <link href="https://hua-ge.github.io/atom.xml" rel="self"/>
   
   <link href="https://hua-ge.github.io/"/>
-  <updated>2021-04-07T03:32:03.899Z</updated>
+  <updated>2022-08-10T04:31:21.940Z</updated>
   <id>https://hua-ge.github.io/</id>
   
   <author>
@@ -17,30 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>图片</title>
-    <link href="https://hua-ge.github.io/2021/04/06/%E5%9B%BE%E7%89%87/"/>
-    <id>https://hua-ge.github.io/2021/04/06/%E5%9B%BE%E7%89%87/</id>
-    <published>2021-04-06T08:23:47.000Z</published>
-    <updated>2021-04-07T03:32:03.899Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;图片来源于网络，如有侵权，请联系作者速删。&lt;br&gt;&lt;img src=&quot;/2021/04/06/%E5%9B%BE%E7%89%87/0.jpg&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="美女" scheme="https://hua-ge.github.io/categories/%E7%BE%8E%E5%A5%B3/"/>
-    
-    
-    <category term="美女" scheme="https://hua-ge.github.io/tags/%E7%BE%8E%E5%A5%B3/"/>
-    
-  </entry>
-  
-  <entry>
     <title>python爬取美女图片</title>
     <link href="https://hua-ge.github.io/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/"/>
     <id>https://hua-ge.github.io/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/</id>
     <published>2021-04-05T08:20:26.639Z</published>
-    <updated>2021-04-08T15:21:12.266Z</updated>
+    <updated>2022-08-10T04:31:21.940Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/0.jpg&quot; width=&quot;100%&quot;&gt;
@@ -49,25 +30,6 @@
     
     
     <category term="python爬虫" scheme="https://hua-ge.github.io/categories/python%E7%88%AC%E8%99%AB/"/>
-    
-    
-    <category term="python" scheme="https://hua-ge.github.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>什么是python</title>
-    <link href="https://hua-ge.github.io/2021/04/05/python/"/>
-    <id>https://hua-ge.github.io/2021/04/05/python/</id>
-    <published>2021-04-05T08:08:34.474Z</published>
-    <updated>2021-04-06T13:27:50.392Z</updated>
-    
-    
-    <summary type="html">&lt;img src=&quot;/2021/04/05/python/0.jpg&quot; width=&quot;100%&quot;&gt;</summary>
-    
-    
-    
-    <category term="python" scheme="https://hua-ge.github.io/categories/python/"/>
     
     
     <category term="python" scheme="https://hua-ge.github.io/tags/python/"/>

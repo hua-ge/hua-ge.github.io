@@ -337,6 +337,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('华哥资源网')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -421,10 +434,6 @@
 先说一下我使用的操作环境：python 3.81,pycharm。
 用到的模块有：requests,parsel(详细用法请查找官方文档）
 网页分析方法举例：打开开发者工具，选中其中的一个图片页面。在定位到的html元素行（颜色明显），观察上下行，找到url.
-代码如下：
-<img src="/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/2.png" width="100%">
-
-
                 
             </div>
             <hr/>
@@ -592,72 +601,25 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/04/06/%E5%9B%BE%E7%89%87/">
+                <a href="/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="图片">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="python爬取美女图片">
                         
-                        <span class="card-title">图片</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            图片来源于网络，如有侵权，请联系作者速删。
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-06
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%BE%8E%E5%A5%B3/" class="post-category">
-                                    美女
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E7%BE%8E%E5%A5%B3/">
-                        <span class="chip bg-color">美女</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/04/05/python/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="什么是python">
-                        
-                        <span class="card-title">什么是python</span>
+                        <span class="card-title">python爬取美女图片</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
+声明：本文章内容仅用于学习。
                         
                     </div>
                     <div class="publish-info">
@@ -668,14 +630,66 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/python/" class="post-category">
-                                    python
+                            <a href="/categories/python%E7%88%AC%E8%99%AB/" class="post-category">
+                                    python爬虫
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/04/05/python%E7%88%AC%E8%99%AB%E2%80%9D%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E2%80%9C/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="python爬取美女图片">
+                        
+                        <span class="card-title">python爬取美女图片</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+声明：本文章内容仅用于学习。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/python%E7%88%AC%E8%99%AB/" class="post-category">
+                                    python爬虫
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -855,9 +869,9 @@
             
                 <span id="year">2019-2022</span>
             
-            <a href="/about" target="_blank">hua-ge</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <a href="/about" target="_blank">hua-ge版权所有</a>
+          
+       
             <br>
             
             
